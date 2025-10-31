@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portafolio personal de Felix Mathias Tobias, programador, físico y estudiante de Ciencias Sociales.">
+    <title>Portada de Felix Mathias Tobias</title>
+    <style>
+        /* Estilos Globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif; /* Fuente cursiva formal */
+        }
+
+        /* Estilo de la página */
+        body {
+            background-color: #2c3e50; /* Fondo oscuro */
+            color: #ecf0f1; /* Letras blancas */
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center; /* Centrado de texto */
+            scroll-behavior: smooth; /* Hacer scroll suave */
+        }
+
+        /* Contenedor Principal */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #34495e; /* Fondo ligeramente más claro que el cuerpo */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 50px;
+        }
+
+        .profile h1 {
+            font-size: 3.5rem;
+            color: #ecf0f1;
+            font-style: italic; /* Cursiva */
+            transition: all 0.3s ease; /* Efecto suave */
+        }
+
+        .profile h1:hover {
+            color: #3498db; /* Cambio de color al hacer hover */
+        }
+
+        .profile .title {
+            font-size: 1.5rem;
+            color: #bdc3c7;
+            font-style: italic; /* Cursiva */
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02); /* Efecto de hover para dar profundidad */
+        }
+
+        /* Encabezados de Sección */
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ecf0f1;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2px;
+            font-style: italic; /* Cursiva */
+        }
+
+        /* Información Personal */
+        .details p {
+            font-size: 1.25rem;
+            margin: 10px 0;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        /* Hobbies */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.25rem;
+            margin: 10px 0;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        /* Amigos */
+        .friends p {
+            font-size: 1.25rem;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 1.125rem;
+            color: #bdc3c7;
+            margin-top: 50px;
+            font-style: italic;
+        }
+
+        /* Redes Sociales */
+        .socials a {
+            margin: 0 10px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .socials a:hover {
+            color: #3498db; /* Cambio de color al pasar el cursor */
+        }
+
+        /* Instagram */
+        .instagram-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .instagram-link img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .instagram-link a {
+            color: #ecf0f1;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        .instagram-link a:hover {
+            color: #3498db;
+        }
+
+        /* Sección de Metas */
+        .goals {
+            margin-top: 50px;
+        }
+
+        .goals p {
+            font-size: 1.5rem;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        /* Barra de habilidades */
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills h2 {
+            font-size: 2rem;
+            color: #ecf0f1;
+            font-style: italic;
+        }
+
+        .skills .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .skills .progress-bar div {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #3498db;
+        }
+
+        .skills .progress-bar .python { width: 50%; }
+        .skills .progress-bar .js { width: 45%; }
+        .skills .progress-bar .html { width: 60%; }
+        .skills .progress-bar .java { width: 40%; }
+        .skills .progress-bar .cpp { width: 35%; }
+        .skills .progress-bar .sql { width: 30%; }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <header>
+            <div class="profile">
+                <h1>Felix Mathias Tobias</h1>
+                <p class="title">Físico | Programador | Estudiante</p>
+            </div>
+        </header>
+
+        <!-- Sección de Información Personal -->
+        <section class="info">
+            <h2>Información Personal</h2>
+            <div class="details">
+                <p><strong>Edad:</strong> 15 años</p>
+                <p><strong>Fecha de Nacimiento:</strong> 30/08/2010</p>
+                <p><strong>Estatura:</strong> 1,76 m</p>
+                <p><strong>Color de Piel:</strong> Blanca</p>
+                <p><strong>Pelo:</strong> Corto</p>
+                <p><strong>Complexión:</strong> Delgado</p>
+                <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+            </div>
+        </section>
+
+        <!-- Sección de Aficiones -->
+        <section class="hobbies">
+            <h2>Aficiones</h2>
+            <ul>
+                <li>Programación</li>
+                <li>Idioma Italiano</li>
+                <li>Batería Acústica</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Amigos -->
+        <section class="friends">
+            <h2>Amigos</h2>
+            <p>Dante, Dylan, Joel, Mati, Enzo</p>
+        </section>
+
+        <!-- Sección de Preferencias Académicas -->
+        <section class="academic">
+            <h2>Estudios y Preferencias Académicas</h2>
+            <p><strong>Mejor Materia:</strong> Historia</p>
+            <p><strong>Instituto:</strong> EE32 Ciencias Sociales</p>
+        </section>
+
+        <!-- Sección de Mascotas -->
+        <section class="pets">
+            <h2>Mascotas</h2>
+            <p>5 Gatos, 3 Conejos, 2 Perros</p>
+        </section>
+
+        <!-- Sección de Lenguajes de Programación -->
+        <section class="languages">
+            <h2>Lenguajes de Programación</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Metas -->
+        <section class="goals">
+            <h2>Metas</h2>
+            <p>Me gustaría ser muy bueno en programación y convertirme en Ingeniero en Software.</p>
+        </section>
+
+        <!-- Barra de habilidades -->
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <div class="progress-bar">
+                <div class="python" style="width: 50%"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="js" style="width: 45%"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="html" style="width: 60%"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="java" style="width: 40%"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="cpp" style="width: 35%"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="sql" style="width: 30%"></div>
+            </div>
+        </section>
+
+        <!-- Sección de Instagram -->
+        <section class="instagram-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+            <a href="https://www.instagram.com/felixx_ld/" target="_blank">Sígueme en Instagram (@felixx_ld)</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Felix Mathias Tobias</p>
+        </footer>
+    </div>
+
+</body>
+</html>
